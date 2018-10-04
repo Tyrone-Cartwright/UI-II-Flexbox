@@ -441,7 +441,7 @@ footer {
 
 .services-card div {
     padding-bottom: 0px;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     width: 420px;
     height: 205px;
     padding: 20px;
@@ -497,12 +497,18 @@ footer {
     margin: 0 60px 20px 0;
 } */
 
-.services-card .services-info .fact-service {
-    margin-bottom: 20px;
-    height: 300px;
+.services-card .fact-service {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* height: 300px; */
 }
 
-.services-card .services-info .services-info-img {
+.services-card .fact-service .facts {}
+
+.services-card .fact-service .services-info-img {
     width: 420px;
     height: 300px;
     margin-top: 10px;
@@ -519,6 +525,8 @@ footer {
     flex-wrap: wrap;
 }
 
-footer {
+.footer-content {
+    display: flex;
+    align-self: baseline;
     height: 20px;
 }
